@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraFolwers</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_wrapper nav_secondary">
+        <div class="nav_logo">
+          <a href="/"><p>UltraFolwers</p> </a>
+        </div>
+
+        <div class="nav_menu">
+          <div class="nav_menu_item">
+            <a href="./catalogue.html"><p>Каталог</p></a>
+          </div>
+
+          <div class="nav_menu_item">
+            <a href="./about-us.html"><p>O нас</p></a>
+          </div>
+          <div class="nav_menu_item">
+            <a href="./contacts.html"><p>контакты</p></a>
+          </div>
+        </div>
+        <div class="mob_menu_icon" onclick="toggleMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="16"
+            viewBox="0 0 24 16"
+            fill="none"
+          >
+            <rect width="24" height="2" fill="black" />
+            <rect y="7" width="24" height="2" fill="black" />
+            <rect y="14" width="24" height="2" fill="black" />
+          </svg>
+        </div>
+        <div class="mob_menu">
+          <div class="mob_menu_icon" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="16"
+              viewBox="0 0 24 16"
+              fill="none"
+            >
+              <rect width="24" height="2" fill="white" />
+              <rect y="7" width="24" height="2" fill="white" />
+              <rect y="14" width="24" height="2" fill="white" />
+            </svg>
+          </div>
+          <div class="nav_menu">
+            <div class="nav_menu_item">
+              <a href="./catalogue.html"><p>Каталог</p></a>
+            </div>
+
+            <div class="nav_menu_item">
+              <a href="./about-us.html"><p>O нас</p></a>
+            </div>
+            <div class="nav_menu_item">
+              <a href="./contacts.html"><p>контакты</p></a>
+            </div>
+          </div>
+        </div>
+        <script>
+          function toggleMenu() {
+            var element = document.querySelector(".nav_wrapper");
+            element.classList.toggle("mob_menu_wrapper");
+            if (element.classList[1] == "mob_menu_wrapper") {
+              var header_bottom = document.querySelector(".header_bottom");
+              header_bottom.style.display = "none";
+            } else {
+              var header_bottom = document.querySelector(".header_bottom");
+              header_bottom.style.display = "flex";
+            }
+          }
+        </script>
+      </div>
+    </nav>
+
+    <section class="about_page main_wrapper">
+      <div class="section_title">
+        <h2>
+          Домашние растения, которые <br />
+          оживят ваш интерьер
+        </h2>
+      </div>
+
+      <h3>Мы предлагаем широкий выбор комнатных растений:</h3>
+      <div class="cards">
+        <div class="card">
+          <div>🪴</div>
+          <p>Неприхотливые и декоративные</p>
+        </div>
+        <div class="card">
+          <div>🌸</div>
+          <p>Цветущие и экзотические</p>
+        </div>
+        <div class="card">
+          <div>🌵</div>
+          <p>Суккуленты и кактусы</p>
+        </div>
+        <div class="card">
+          <div>🌴</div>
+          <p>крупные для офиса и дома</p>
+        </div>
+      </div>
+
+      <h3>
+        Каждое растение мы отбираем с любовью и заботой — чтобы вы получали
+        только здоровые и красивые экземпляры.
+      </h3>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer_menu">
+          <a href="./catalogue.html"><p>Каталог</p></a>
+
+          <a href="./about-us.html"><p>О нас</p></a>
+          <a href="./contacts.html"><p>контакты</p></a>
+        </div>
+        <div class="footer_contacts">
+          <a href="tel:+38 067 500 35 00"><h2>+38 067 500 35 00</h2></a>
+          <a href="mailto:hello@support.com"><h2>hello@support.com</h2></a>
+          <div class="footer_socials">
+            <p>
+              Подпишитесь <br />
+              на нас:
+            </p>
+            <a href="#"><img src="./assets/icons/tg.svg" alt="" /></a>
+            <a href="#"><img src="./assets/icons/facebook.svg" alt="" /></a>
+            <a href="#"><img src="./assets/icons/instagram.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer_menu">
+          <a href="#"><p>Условия использования сайта</p></a>
+          <a href="#"><p>Политика конфиденциальности</p></a>
+
+          <a href="#"><p>Условия продаж</p></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
