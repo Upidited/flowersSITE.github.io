@@ -1,0 +1,248 @@
+.about_item {
+  margin-top: 35px;
+  display: flex;
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+.about_content_block_title {
+  color: #000;
+  font-family: "Forum";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+.about_title h2 {
+  color: #353535;
+  font-family: "Forum";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.about_cost p {
+  color: #000;
+  font-family: "Forum";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.about_sizes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about_size {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.about_size:hover {
+  background: #000;
+  transition: all 0.4s ease;
+}
+.about_size p {
+  transition: all 0.4s ease;
+}
+.about_size:hover p {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.active_size {
+  background: #000;
+}
+.active_size p {
+  color: #fff;
+}
+.sizes_block {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.sizes_block .about_content_block_title {
+  margin: 0;
+  cursor: pointer;
+}
+
+.about_btns {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  gap: 15px;
+  margin-bottom: 52px;
+}
+.about_btns button {
+  border-radius: 7px;
+  padding: 16px 32px;
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about_btns button:first-child {
+  color: #fff;
+  border-radius: 7px;
+  background: #353535;
+  transition: all 0.4s ease;
+}
+.about_btns button:first-child:hover {
+  background: #000;
+  transition: all 0.4s ease;
+}
+.about_btns button:last-child {
+  border-radius: 7px;
+  border: 1px solid #999;
+  background: #fff;
+  color: #353535;
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about_content_block_title_secondary {
+  color: #353535;
+  font-family: Forum;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.about_descr_text {
+  width: 400px;
+  margin-bottom: 50px;
+}
+.about_descr_text p {
+  color: #353535;
+  text-align: justify;
+  font-family: Inter Tight;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 21.75px */
+}
+
+.about_recs .section_title {
+  text-align: left;
+  justify-content: start;
+  margin-bottom: 60px;
+}
+
+.about_recs .section_title h2 {
+  text-align: left;
+}
+
+/*  */
+
+.gallery {
+  text-align: center;
+}
+
+#mainImage {
+  width: 560px;
+  height: 710px;
+  margin-bottom: 7px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+}
+
+.thumbnail {
+  width: 90px;
+  height: 90px;
+  border-radius: 7px;
+  margin-right: 7px;
+  cursor: pointer;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.thumbnail.active {
+  opacity: 1;
+}
+
+.about_page h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.card div {
+  font-size: 30px;
+}
+.card p {
+  font-size: 19px;
+}
+
+.contatcs_block {
+  max-width: 700px;
+  padding: 30px;
+  margin: 0 auto;
+  background: #2f2b2b;
+
+  margin: 50px auto;
+  margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 500px) {
+  .about_item {
+    flex-direction: column;
+  }
+  #mainImage {
+    width: 100%;
+    height: auto;
+  }
+  .sizes_block {
+    display: none;
+  }
+  .sizes_title {
+    display: none;
+  }
+  .about_btns {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .about_btns button,
+  .about_descr_text {
+    width: 100%;
+  }
+  .about_item {
+    margin-bottom: 0;
+  }
+  .thumbnail {
+    width: 48px;
+    height: 48px;
+  }
+}
